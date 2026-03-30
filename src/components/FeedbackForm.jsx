@@ -60,8 +60,7 @@ const FeedbackForm = ({ onAdd, editing, onEditDone }) => {
           onChange={(e) => setMessage(e.target.value)}
           rows="4"
         />
-
-        <label><strong>Rating:</strong></label>
+        
         <StarRating value={rating} onChange={setRating} />
         
         <Button 

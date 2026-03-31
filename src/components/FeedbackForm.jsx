@@ -185,7 +185,7 @@ const FeedbackForm = ({ onAdd, editing, onEditDone }) => {
           maxLength="50"
         />
         {errors.name && <span className="error-text">{errors.name}</span>}
-        <span className="char-info">{name.length}/50 characters</span>
+        <span className="char-info">{name.length}</span>
 
         {/* Email Field */}
         <label><strong>Email:</strong></label>
@@ -199,7 +199,6 @@ const FeedbackForm = ({ onAdd, editing, onEditDone }) => {
         {errors.email && <span className="error-text">{errors.email}</span>}
 
         {/* Message Field */}
-        <label><strong>Feedback:</strong></label>
         <textarea
           placeholder="Your feedback (5-500 characters)"
           value={message}
@@ -208,7 +207,7 @@ const FeedbackForm = ({ onAdd, editing, onEditDone }) => {
           rows="4"
           maxLength="500"
         />
-        <span className="char-count">{message.length}/500 characters</span>
+        <span className="char-count">{message.length}</span>
         {errors.message && <span className="error-text">{errors.message}</span>}
 
         {/* Rating Field */}
